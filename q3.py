@@ -25,6 +25,10 @@ customers = [
 import math
 
 def grab_posts(customer_list):
+
+    """grabs the number of posts from a dictionary, appending
+    the value to a list"""
+
     post_list = []
     for customer in customers:
         post_list.append(customer["posts"])

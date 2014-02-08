@@ -27,6 +27,10 @@ from operator import itemgetter
 
 
 def generate_list_of_objs(list_of_dicts):
+
+    """given a dictionary, this function splits the name into
+    first_name and last_name, then generates a list of objects."""
+
     new_list = []
     for customer in list_of_dicts:
         if customer["posts"] > 0:
@@ -37,6 +41,11 @@ def generate_list_of_objs(list_of_dicts):
     return new_list
 
 def split_names(dictionary):
+
+    """given a dictionary, this splits the name into a list. then the last_name
+    is popped out of the list and the remaining name (or names) makes up the first
+    name. finally, the first_name and last_name are added to a list, then returned"""
+
     converted_names = []
     split_name = dictionary["name"].split(" ")
     last_name = split_name.pop()
@@ -46,6 +55,10 @@ def split_names(dictionary):
 
 
 def sort_list(list_of_objs):
+
+    """given a list of objects, this function sorts them based on the number
+    posts in descending order"""
+
     sorted_list = sorted(list_of_objs, key=itemgetter("posts"), reverse=True)
     return sorted_list
 

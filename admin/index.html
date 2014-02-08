@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BraveNewTalent - Admin Dashboard</title>
+    <!-- stylesheets -->
+    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.1.0/flatly/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <!-- navigation -->
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+        <!-- Sidebar -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div><!-- /Sidebar -->
+
+        <!-- siderbar links -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav side-bar">
+            <li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
+            <li><a href="#"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
+          </ul> <!-- /siderbar links -->
+
+        </div>
+
+      </nav> <!-- /navigation -->
+
+      <div id="page-wrapper">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>LOGO HERE <small>Statistics Overview</small></h1>
+            <ol class="breadcrumb">
+              <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
+            </ol>
+          </div>
+        </div><!-- /row -->
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <i class="fa fa-tasks fa-5x"></i>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="announce-heading">23</p>
+                    <p class="announce-text">Campaigns</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer announcement-bottom">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      View All Campaigns
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <i class="fa fa-tasks fa-5x"></i>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="announce-heading">876</p>
+                    <p class="announce-text">Active Users</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer announcement-bottom">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      View All Users
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <i class="fa fa-tasks fa-5x"></i>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="announce-heading">9,876</p>
+                    <p class="announce-text">Comments</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer announcement-bottom">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      View All Comments
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <i class="fa fa-tasks fa-5x"></i>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="announce-heading">7,654</p>
+                    <p class="announce-text">Total Likes</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer announcement-bottom">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      View All Likes
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> NEW LIKES: February 2014</h3>
+              </div>
+              <div class="panel-body">
+                <div id="morris-chart-area"></div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> TOPICS: February 2014</h3>
+              </div>
+              <div class="panel-body">
+                <div id="morris-chart-donut"></div>
+                <div class="text-right">
+                  <a href="#">More Info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> RECENT COMMENTS</h3>
+              </div>
+              <div class="panel-body">
+                <div class="list-group">
+                  <a href="#" class="list-group-item">
+                    <span class="badge">just now</span>
+                    <i class="fa fa-comment"></i> yes!
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">2 minutes ago</span>
+                    <i class="fa fa-comment"></i> So nice!
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">3 minutes ago</span>
+                    <i class="fa fa-comment"></i> I agree!
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">6 minutes ago</span>
+                    <i class="fa fa-comment"></i> That's not really what ...
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">10 minutes ago</span>
+                    <i class="fa fa-comment"></i> I think so too.
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">12 minutes ago</span>
+                    <i class="fa fa-comment"></i> Hi!
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">8 minutes ago</span>
+                    <i class="fa fa-comment"></i> Bye!
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <span class="badge">1 minutes ago</span>
+                    <i class="fa fa-comment"></i> Hi!
+                  </a>
+                </div>
+                <div class="text-right">
+                  <a href="#">View All Comments</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> RECENT CAMPAIGNS</h3>
+              </div>
+              <div class="panel-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover table-striped tablesorter">
+                    <thead>
+                      <tr>
+                        <th># <i class="fa fa-sort"></i></th>
+                        <th>Date <i class="fa fa-sort"></i></th>
+                        <th>Org <i class="fa fa-sort"></i></th>
+                        <th>Accept? <i class="fa fa-sort"></i></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>336</td>
+                        <td>02/02/2013</td>
+                        <td>Starbucks</td>
+                        <td>Yes</td>
+                      </tr>
+                      <tr>
+                        <td>335</td>
+                        <td>02/02/2013</td>
+                        <td>Starbucks</td>
+                        <td>Yes</td>
+                      </tr>
+                      <tr>
+                        <td>334</td>
+                        <td>02/02/2013</td>
+                        <td>Starbucks</td>
+                        <td>Yes</td>
+                      </tr>
+                      <tr>
+                        <td>333</td>
+                        <td>02/02/2013</td>
+                        <td>Starbucks</td>
+                        <td>No</td>
+                      </tr>
+                      <tr>
+                        <td>332</td>
+                        <td>02/02/2013</td>
+                        <td>Starbucks</td>
+                        <td>Yes</td>
+                      </tr>
+                      <tr>
+                        <td>331</td>
+                        <td>02/02/2013</td>
+                        <td>Starbucks</td>
+                        <td>No</td>
+                      </tr>
+                      <tr>
+                        <td>330</td>
+                        <td>02/03/2013</td>
+                        <td>Starbucks</td>
+                        <td>Yes</td>
+                      </tr>
+                      <tr>
+                        <td>329</td>
+                        <td>02/03/2013</td>
+                        <td>Starbucks</td>
+                        <td>Yes</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="text-right">
+                  <a href="#">View All</i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+      </div><!-- /#page-wrapper -->
+
+    </div><!-- /#wrapper -->
+
+    <!-- scripts -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.4.3/morris.min.js"></script>
+    <script src="js/morris/chart-data-morris.js"></script>
+    <script src="js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="js/tablesorter/tables.js"></script>
+
+  </body>
+</html>
